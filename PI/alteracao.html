@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alteração de Consulta</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="reset.css">
+    
+</head>
+<body class="bg-gray-100">
+    <div class="flex h-screen">
+        <aside class="w-64 bg-gray-800 text-gray-200 flex flex-col">
+             <nav class="mt-10 px-4 flex-1">
+                 <ul>
+                    <li class="mb-4">
+                        <a href="#" class="flex items-center py-2 px-4 rounded hover:bg-gray-700 transition duration-200">
+                            <span class="mr-3">🏠</span> Início
+                        </a>
+                    </li>
+                    <li class="mb-4">
+                        <a href="#" class="flex items-center py-2 px-4 rounded hover:bg-gray-700 transition duration-200">
+                            <span class="mr-3">📅</span> Calendário de agendamentos
+                        </a>
+                    </li>
+                    <li class="mb-4">
+                        <a href="#" class="flex items-center py-2 px-4 rounded hover:bg-gray-700 transition duration-200">
+                            <span class="mr-3">📋</span> Catálogo de serviços
+                        </a>
+                    </li>
+                    <li class="mb-4">
+                        <a href="#" class="flex items-center py-2 px-4 rounded hover:bg-gray-700 transition duration-200">
+                             <span class="mr-3">📜</span> Histórico de consultas
+                        </a>
+                    </li>
+                    <li class="mb-4">
+                        <a href="#" class="flex items-center py-2 px-4 rounded hover:bg-gray-700 transition duration-200">
+                             <span class="mr-3">👥</span> Pacientes
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="flex-1 p-8 overflow-y-auto bg-white">
+            <div class="mb-8">
+                <p class="text-xl font-semibold text-gray-700">Olá, Doutora Eliane.</p>
+            </div>
+
+             <h2 class="text-2xl font-bold text-gray-800 mb-6">Alteração de informações da consulta</h2>
+
+            <div class="bg-gray-50 p-6 rounded-lg shadow-sm border border-gray-200 mb-8">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-x-6 gap-y-4 mb-4">
+                    <div>
+                        <span class="font-semibold text-gray-600 block text-sm">Nome:</span>
+                        <span class="text-gray-800">Eurides Catedral de Antióquia</span>
+                    </div>
+                    <div>
+                        <span class="font-semibold text-gray-600 block text-sm">C.P.F.:</span>
+                        <span class="text-gray-800">123.456.789-00</span>
+                    </div>
+                     <div>
+                        <span class="font-semibold text-gray-600 block text-sm">Data de Nascimento:</span>
+                        <span class="text-gray-800">29/02/2001</span>
+                    </div>
+                    <div>
+                        <span class="font-semibold text-gray-600 block text-sm">Data:</span>
+                        <span class="text-gray-800">24/03/2025</span>
+                    </div>
+                    <div>
+                        <span class="font-semibold text-gray-600 block text-sm">Horário agendado:</span>
+                        <span class="text-gray-800">08:00</span>
+                    </div>
+                     <div>
+                        <span class="font-semibold text-gray-600 block text-sm">Horário de chegada:</span>
+                        <span class="text-gray-800">08:22</span>
+                    </div>
+                     <div>
+                        <span class="font-semibold text-gray-600 block text-sm">Serviço:</span>
+                        <span class="text-gray-800">Limpeza e raspagem</span>
+                    </div>
+                    <div>
+                        <span class="font-semibold text-gray-600 block text-sm">Compareceu:</span>
+                        <span class="text-red-600 font-medium">Não</span>
+                    </div>
+                     <div>
+                        <span class="font-semibold text-gray-600 block text-sm">Tipo de pagamento:</span>
+                        <span class="text-gray-800">Dinheiro</span>
+                    </div>
+                     <div>
+                        <span class="font-semibold text-gray-600 block text-sm">Pago:</span>
+                        <span class="text-red-600 font-medium">Não</span>
+                    </div>
+                </div>
+                 <div class="mt-4">
+                    <span class="font-semibold text-gray-600 block text-sm">Observação:</span>
+                    
+                 </div>
+            </div>
+
+            <div class="flex justify-end space-x-4 mt-8">
+                <button type="button" class="py-2 px-6 bg-blue-600 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-75 transition duration-150">
+                    Salvar alterações
+                </button>
+                <button type="button" class="py-2 px-6 bg-gray-300 text-gray-700 font-semibold rounded-lg shadow-md hover:bg-gray-400 focus:outline-none focus:ring-2 focus:ring-gray-300 focus:ring-opacity-75 transition duration-150">
+                    Cancelar
+                </button>
+            </div>
+
+        </main>
+    </div>
+</body>
+</html>
