@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda Médica</title>
+    <link rel="stylesheet" href="style_home.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+</head>
+<body class="bg-gray-100">
+    <div class="flex h-screen">
+        <aside class="w-64 bg-gray-800 text-gray-200 flex flex-col">
+            <nav class="mt-10 px-4 flex-1">
+                <ul>
+                    <li class="mb-4">
+                        <a href="calendario.html" class="flex items-center py-2 px-4 rounded hover:bg-gray-700 transition duration-200">
+                            <span class="mr-3">📅</span> Calendário de agendamentos
+                        </a>
+                    </li>
+                    <li class="mb-4">
+                        <a href="#" class="flex items-center py-2 px-4 rounded hover:bg-gray-700 transition duration-200">
+                            <span class="mr-3">📋</span> Catálogo de serviços
+                        </a>
+                    </li>
+                    <li class="mb-4">
+                        <a href="#" class="flex items-center py-2 px-4 rounded hover:bg-gray-700 transition duration-200">
+                             <span class="mr-3">📜</span> Histórico de consultas
+                        </a>
+                    </li>
+                    <li class="mb-4">
+                        <a href="#" class="flex items-center py-2 px-4 rounded hover:bg-gray-700 transition duration-200">
+                             <span class="mr-3">👥</span> Pacientes
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="flex-1 p-8 overflow-y-auto">
+            <div class="mb-8">
+                <p class="text-xl font-semibold text-gray-700">Olá, Doutora Eliane.</p>
+            </div>
+
+            <div class="flex justify-between items-start mb-8">
+                <div class="dropdown" style="display: block;">
+                    <a class="">Cadastrar</a>
+                    <div class="dropdown-cadastrar">
+                        <a href="#">Consulta</a>
+                        <a href="#">Paciente</a>
+                        <a href="#">Serviço</a>
+                    </div>
+                </div>
+
+                 <h2 class="text-2xl font-bold text-center text-gray-800 flex-1 mr-4 ml-4">Agenda do dia!</h2>
+
+                 <div class="w-32 h-16"> </div>
+            </div>
+
+
+            <div class="bg-white shadow-md rounded-lg overflow-hidden">
+                <table class="min-w-full leading-normal">
+                    <thead>
+                        <tr class="bg-gray-200 text-gray-600 uppercase text-sm">
+                            <th class="px-5 py-3 border-b-2 border-gray-300 text-left">Data</th>
+                            <th class="px-5 py-3 border-b-2 border-gray-300 text-left">Horário</th>
+                            <th class="px-5 py-3 border-b-2 border-gray-300 text-left">Nome</th>
+                            <th class="px-5 py-3 border-b-2 border-gray-300 text-left">Serviço</th>
+                            <th class="px-5 py-3 border-b-2 border-gray-300 text-left">Pagamento</th>
+                            <th class="px-5 py-3 border-b-2 border-gray-300 text-right">Valor</th>
+                            <th class="px-5 py-3 border-b-2 border-gray-300 text-center">Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody class="text-gray-700">
+                        <tr>
+                            <td class="px-5 py-4 border-b border-gray-200 bg-white text-sm">24/03/2025</td>
+                            <td class="px-5 py-4 border-b border-gray-200 bg-white text-sm">08:00</td>
+                            <td class="px-5 py-4 border-b border-gray-200 bg-white text-sm">Joaquim Neto</td>
+                            <td class="px-5 py-4 border-b border-gray-200 bg-white text-sm">Manutenção de aparelho</td>
+                            <td class="px-5 py-4 border-b border-gray-200 bg-white text-sm font-semibold text-green-600">Sim</td>
+                            <td class="px-5 py-4 border-b border-gray-200 bg-white text-sm text-right">R$ 90,00</td>
+                            <td class="px-5 py-4 border-b border-gray-200 bg-white text-sm text-center">
+                                <a href="alteracao.html" class="text-blue-600 hover:text-blue-800">Editar</a>
+                            </td>
+                        </tr>
+                         <tr class="bg-gray-50">
+                            <td class="px-5 py-4 border-b border-gray-200 text-sm">24/03/2025</td>
+                            <td class="px-5 py-4 border-b border-gray-200 text-sm">08:15</td>
+                            <td class="px-5 py-4 border-b border-gray-200 text-sm">Ana Lúcia</td>
+                            <td class="px-5 py-4 border-b border-gray-200 text-sm">Manutenção de aparelho</td>
+                            <td class="px-5 py-4 border-b border-gray-200 text-sm font-semibold text-green-600">Sim</td>
+                            <td class="px-5 py-4 border-b border-gray-200 text-sm text-right">R$ 90,00</td>
+                            <td class="px-5 py-4 border-b border-gray-200 text-sm text-center">
+                                <a href="alteracao.html" class="text-blue-600 hover:text-blue-800">Editar</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="px-5 py-4 border-b border-gray-200 bg-white text-sm">24/03/2025</td>
+                            <td class="px-5 py-4 border-b border-gray-200 bg-white text-sm">08:30</td>
+                            <td class="px-5 py-4 border-b border-gray-200 bg-white text-sm">Felipe Junior</td>
+                            <td class="px-5 py-4 border-b border-gray-200 bg-white text-sm">Limpeza e raspagem</td>
+                            <td class="px-5 py-4 border-b border-gray-200 bg-white text-sm font-semibold text-red-600">Não</td>
+                            <td class="px-5 py-4 border-b border-gray-200 bg-white text-sm text-right">R$ 150,00</td>
+                            <td class="px-5 py-4 border-b border-gray-200 bg-white text-sm text-center">
+                                <a href="alteracao.html" class="text-blue-600 hover:text-blue-800">Editar</a>
+                            </td>
+                        </tr>
+                         <tr class="bg-gray-50">
+                            <td class="px-5 py-4 border-b border-gray-200 text-sm">24/03/2025</td>
+                            <td class="px-5 py-4 border-b border-gray-200 text-sm">09:00</td>
+                            <td class="px-5 py-4 border-b border-gray-200 text-sm">Chico Garcia</td>
+                            <td class="px-5 py-4 border-b border-gray-200 text-sm">Extração de dente</td>
+                            <td class="px-5 py-4 border-b border-gray-200 text-sm font-semibold text-red-600">Não</td>
+                            <td class="px-5 py-4 border-b border-gray-200 text-sm text-right">R$ 180,00</td>
+                            <td class="px-5 py-4 border-b border-gray-200 text-sm text-center">
+                                <a href="alteracao.html" class="text-blue-600 hover:text-blue-800">Editar</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="px-5 py-4 border-b border-gray-200 bg-white text-sm">24/03/2025</td>
+                            <td class="px-5 py-4 border-b border-gray-200 bg-white text-sm">09:30</td>
+                            <td class="px-5 py-4 border-b border-gray-200 bg-white text-sm">Hernades Fagundes</td>
+                            <td class="px-5 py-4 border-b border-gray-200 bg-white text-sm">Cirurgia de coroa dentária</td>
+                            <td class="px-5 py-4 border-b border-gray-200 bg-white text-sm font-semibold text-red-600">Não</td>
+                            <td class="px-5 py-4 border-b border-gray-200 bg-white text-sm text-right">R$ 500,00</td>
+                            <td class="px-5 py-4 border-b border-gray-200 bg-white text-sm text-center">
+                                <a href="alteracao.html" class="text-blue-600 hover:text-blue-800">Editar</a>
+                            </td>
+                        </tr>
+                         <tr class="bg-gray-50">
+                            <td class="px-5 py-4 border-b border-gray-200 text-sm">24/03/2025</td>
+                            <td class="px-5 py-4 border-b border-gray-200 text-sm">10:15</td>
+                            <td class="px-5 py-4 border-b border-gray-200 text-sm">Helena de Souza</td>
+                            <td class="px-5 py-4 border-b border-gray-200 text-sm">Manutenção de aparelho</td>
+                            <td class="px-5 py-4 border-b border-gray-200 text-sm font-semibold text-green-600">Sim</td>
+                            <td class="px-5 py-4 border-b border-gray-200 text-sm text-right">R$ 90,00</td>
+                            <td class="px-5 py-4 border-b border-gray-200 text-sm text-center">
+                                <a href="alteracao.html" class="text-blue-600 hover:text-blue-800">Editar</a>
+                            </td>
+                        </tr>
+                         <tr>
+                            <td class="px-5 py-4 border-b border-gray-200 bg-white text-sm">24/03/2025</td>
+                            <td class="px-5 py-4 border-b border-gray-200 bg-white text-sm">10:30</td>
+                            <td class="px-5 py-4 border-b border-gray-200 bg-white text-sm">Isabela da Conceição</td>
+                            <td class="px-5 py-4 border-b border-gray-200 bg-white text-sm">Avaliação</td>
+                            <td class="px-5 py-4 border-b border-gray-200 bg-white text-sm font-semibold text-red-600">Não</td>
+                            <td class="px-5 py-4 border-b border-gray-200 bg-white text-sm text-right">R$ 0,00</td>
+                            <td class="px-5 py-4 border-b border-gray-200 bg-white text-sm text-center">
+                                <a href="alteracao.html" class="text-blue-600 hover:text-blue-800">Editar</a>
+                            </td>
+                            </tr>
+                        </tbody>
+                </table>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

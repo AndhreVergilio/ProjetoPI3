@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alteração de Consulta</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style_cadastro_agenda.css">
+    
+</head>
+<body class="bg-gray-100">
+    <div class="flex h-screen">
+        <aside class="w-64 bg-gray-800 text-gray-200 flex flex-col">
+             <nav class="mt-10 px-4 flex-1">
+                 <ul>
+                    <li class="mb-4">
+                        <a href="home.html" class="flex items-center py-2 px-4 rounded hover:bg-gray-700 transition duration-200">
+                            <span class="mr-3">🏠</span> Início
+                        </a>
+                    </li>
+                    <li class="mb-4">
+                        <a href="calendario.html" class="flex items-center py-2 px-4 rounded hover:bg-gray-700 transition duration-200">
+                            <span class="mr-3">📅</span> Calendário de agendamentos
+                        </a>
+                    </li>
+                    <li class="mb-4">
+                        <a href="#" class="flex items-center py-2 px-4 rounded hover:bg-gray-700 transition duration-200">
+                            <span class="mr-3">📋</span> Catálogo de serviços
+                        </a>
+                    </li>
+                    <li class="mb-4">
+                        <a href="#" class="flex items-center py-2 px-4 rounded hover:bg-gray-700 transition duration-200">
+                             <span class="mr-3">📜</span> Histórico de consultas
+                        </a>
+                    </li>
+                    <li class="mb-4">
+                        <a href="#" class="flex items-center py-2 px-4 rounded hover:bg-gray-700 transition duration-200">
+                             <span class="mr-3">👥</span> Pacientes
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+
+    <main class="content">
+        <p class="greeting">Olá, Doutora Eliane.</p>
+
+        <h2 class="main-title"><span>Agendamento de consulta</span></h2>
+
+        <div class="appointment-details">
+            <div class="detail-row">
+                <div>
+                    <span class="label">Data:</span> 03/05/2025
+                </div>
+                <div>
+                    <span class="label">Horário:</span> 11:30
+                </div>
+            </div>
+            <div class="detail-row">
+                 <div>
+                    <span class="label">Nome:</span>
+                 </div>
+            </div>
+             <div class="detail-row">
+                 <div>
+                    <span class="label">Serviço:</span> coroa dentária
+                 </div>
+            </div>
+             <div class="detail-row">
+                 <div>
+                    <span class="label">Tipo de pagamento:</span> dinheiro
+                 </div>
+                 <div>
+                     <span class="label">Pago:</span> sim
+                 </div>
+            </div>
+             <div class="detail-row">
+                 <div>
+                    <span class="label">Observação:</span>
+                    </div>
+            </div>
+        </div>
+
+        <div class="button-group">
+            <button class="btn btn-save">Salvar alterações</button>
+            <button class="btn btn-cancel">Cancelar</button>
+        </div>
+    </main>
+</body>
+</html>

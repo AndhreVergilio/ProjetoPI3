@@ -1,0 +1,126 @@
+/* Reset básico e fontes */
+body {
+    display: flex; /* Habilita Flexbox para layout */
+    font-family: Arial, Helvetica, sans-serif; /* Define uma fonte padrão */
+    margin: 0; /* Remove margens padrão do body */
+    min-height: 100vh; /* Garante que o body ocupe toda a altura da tela */
+    background-color: #f0f0f0; /* Cor de fundo geral (opcional) */
+}
+
+/* Estilos da Barra Lateral */
+.sidebar {
+    width: 260px; /* Largura da barra lateral */
+    background-color: #333a45; /* Cor de fundo escura da barra lateral */
+    color: #e0e0e0; /* Cor do texto na barra lateral */
+    padding-top: 20px; /* Espaçamento no topo */
+    flex-shrink: 0; /* Impede que a barra lateral encolha */
+}
+
+.sidebar nav ul {
+    list-style: none; /* Remove marcadores da lista */
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar nav ul li a {
+    display: block; /* Faz o link ocupar toda a largura */
+    color: #e0e0e0;
+    text-decoration: none; /* Remove sublinhado do link */
+    padding: 15px 25px; /* Espaçamento interno dos links */
+    transition: background-color 0.3s ease; /* Efeito suave na mudança de cor */
+}
+
+.sidebar nav ul li a:hover {
+    background-color: #4a5260; /* Cor de fundo ao passar o mouse */
+}
+
+.sidebar nav ul li a i.fa-fw {
+    margin-right: 10px; /* Espaço entre o ícone e o texto */
+    width: 1.2em; /* Garante alinhamento dos ícones */
+}
+
+/* Estilos da Área de Conteúdo Principal */
+.content {
+    height: 100vh;
+    width: 100vh;
+    flex-grow: 1; /* Faz o conteúdo principal ocupar o espaço restante */
+    padding: 30px 40px; /* Espaçamento interno */
+    background-color: #ffffff; /* Cor de fundo branca */
+}
+
+.greeting {
+    font-size: 1.1em;
+    color: #333;
+    margin-bottom: 25px; /* Espaço abaixo da saudação */
+}
+
+.main-title {
+    text-align: center; /* Centraliza o título */
+    margin-bottom: 35px;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.main-title span {
+    padding: 6px 18px; /* Espaçamento interno do destaque */
+    border-radius: 4px; /* Bordas levemente arredondadas */
+}
+
+/* Estilos dos Detalhes do Agendamento */
+.appointment-details {
+    margin-bottom: 30px;
+}
+
+.detail-row {
+    display: flex; /* Usa flexbox para alinhar itens na linha */
+    justify-content: space-between; /* Espaça os itens (útil para data/hora, tipo/pago) */
+    align-items: baseline; /* Alinha pela base do texto */
+    padding: 12px 5px; /* Espaçamento interno */
+    margin-bottom: 8px; /* Espaço entre as linhas */
+    border-bottom: 2px solid #00bcd4; /* Linha divisória ciano */
+    flex-wrap: wrap; /* Permite que os itens quebrem linha se não couberem */
+}
+
+/* Remove a borda da última linha */
+.appointment-details .detail-row:last-child {
+   border-bottom: none;
+}
+
+.detail-row .label {
+    font-weight: bold; /* Texto do rótulo em negrito */
+    margin-right: 8px; /* Espaço à direita do rótulo */
+    color: #333; /* Cor do texto do rótulo */
+    min-width: 140px; /* Largura mínima para alinhamento (ajuste conforme necessário) */
+    display: inline-block; /* Garante que a largura mínima funcione */
+}
+
+/* Garante que os segundos elementos (Horário, Pago) não tenham largura mínima excessiva */
+.detail-row div:last-child .label {
+    min-width: auto;
+}
+
+/* Estilos dos Botões */
+.button-group {
+    text-align: center; /* Centraliza os botões */
+    margin-top: 30px; /* Espaço acima dos botões */
+}
+
+.btn {
+    padding: 10px 25px; /* Espaçamento interno dos botões */
+    border: 1px solid #ccc;
+    background-color: #e7e7e7; /* Cor de fundo cinza claro */
+    color: #333;
+    border-radius: 4px; /* Bordas arredondadas */
+    cursor: pointer; /* Cursor de mãozinha */
+    font-size: 1em;
+    margin: 0 10px; /* Espaço entre os botões */
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #dcdcdc; /* Cor de fundo ao passar o mouse */
+}
+
+/* Ajustes específicos (opcional) */
+/* .btn-save { ... } */
+/* .btn-cancel { ... } */

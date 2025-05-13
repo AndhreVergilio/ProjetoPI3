@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendário de Agendamentos</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .agenda-table td {
+            height: 4rem;
+            vertical-align: top;
+            padding: 0.25rem;
+        }
+        .agenda-table th {
+            padding: 0.5rem;
+        }
+        
+        .mini-cal th, .mini-cal td {
+            text-align: center;
+            padding: 2px;
+        }
+        .mini-cal th {
+            background-color: #e5e7eb;
+        }
+       
+    </style>
+</head>
+<body class="bg-gray-100">
+    <div class="flex h-screen">
+        <aside class="w-64 bg-gray-800 text-gray-200 flex flex-col flex-shrink-0">
+            <nav class="mt-10 px-4 flex-1">
+                <ul>
+                    <li class="mb-4">
+                        <a href="home.html" class="flex items-center py-2 px-4 rounded hover:bg-gray-700 transition duration-200">
+                            <span class="mr-3">🏠</span> Início
+                        </a>
+                    </li>
+                    <li class="mb-4">
+                        <a href="#" class="flex items-center py-2 px-4 rounded hover:bg-gray-700 transition duration-200 bg-gray-700"> <span class="mr-3">📅</span> Calendário de agendamentos
+                        </a>
+                    </li>
+                    <li class="mb-4">
+                        <a href="#" class="flex items-center py-2 px-4 rounded hover:bg-gray-700 transition duration-200">
+                            <span class="mr-3">📋</span> Catálogo de serviços
+                        </a>
+                    </li>
+                    <li class="mb-4">
+                        <a href="#" class="flex items-center py-2 px-4 rounded hover:bg-gray-700 transition duration-200">
+                             <span class="mr-3">📜</span> Histórico de consultas
+                        </a>
+                    </li>
+                    <li class="mb-4">
+                        <a href="#" class="flex items-center py-2 px-4 rounded hover:bg-gray-700 transition duration-200">
+                             <span class="mr-3">👥</span> Pacientes
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="flex-1 p-6 overflow-y-auto bg-white flex flex-col">
+            <div class="mb-6 flex-shrink-0">
+                <p class="text-xl font-semibold text-gray-700">Olá, Doutora Eliane.</p>
+            </div>
+
+            <div class="mb-4 flex items-center justify-between space-x-4 flex-shrink-0">
+                <div class="text-xs border border-gray-300 rounded p-2 shadow-sm">
+                    <div class="flex justify-between items-center mb-1 font-semibold">
+                        <button class="hover:text-blue-600">&lt;</button>
+                        <span>March 2025</span>
+                        <button class="hover:text-blue-600">&gt;</button>
+                    </div>
+                    <table class="mini-cal w-full">
+                        <thead>
+                            <tr>
+                                <th>Su</th><th>Mo</th><th>Tu</th><th>We</th><th>Th</th><th>Fr</th><th>Sa</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                             <tr>
+                                <td class="text-gray-400">23</td><td class="text-gray-400">24</td><td class="text-gray-400">25</td><td class="text-gray-400">26</td><td class="text-gray-400">27</td><td class="text-gray-400">28</td><td>1</td>
+                            </tr>
+                            <tr>
+                                <td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td>
+                            </tr>
+                             <tr>
+                                <td>9</td><td>10</td><td>11</td><td>12</td><td>13</td><td>14</td><td>15</td>
+                            </tr>
+                             <tr>
+                                <td>16</td><td>17</td><td>18</td><td>19</td><td>20</td><td>21</td><td>22</td>
+                            </tr>
+                             <tr>
+                                <td>23</td><td class="bg-blue-200 rounded">24</td><td>25</td><td>26</td><td>27</td><td>28</td><td>29</td>
+                            </tr>
+                            <tr>
+                                 <td>30</td><td>31</td><td class="text-gray-400">1</td><td class="text-gray-400">2</td><td class="text-gray-400">3</td><td class="text-gray-400">4</td><td class="text-gray-400">5</td>
+                             </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="flex items-center space-x-3">
+                    <button class="bg-gray-200 hover:bg-gray-300 text-gray-700 py-1 px-3 rounded text-sm font-medium">Hoje</button>
+                    <button class="bg-gray-200 hover:bg-gray-300 text-gray-700 py-1 px-3 rounded text-sm font-medium flex items-center">
+                        <span class="mr-1"> Filtrar </button>
+                    <div class="relative">
+                        <input type="text" placeholder="Busca" class="border border-gray-300 rounded py-1 px-3 text-sm focus:outline-none focus:ring-1 focus:ring-blue-500 focus:border-blue-500">
+                         </div>
+                </div>
+
+                 <button class="bg-gray-200 hover:bg-gray-300 text-gray-700 py-1 px-3 rounded text-sm font-medium flex items-center">
+                    <span class="mr-1">🗓️</span> Semanal </button>
+
+                 <div class="w-24 h-12"> </div>
+            </div>
+
+            <div class="flex flex-1 space-x-4 overflow-hidden">
+                <div class="flex-1 overflow-auto">
+                    <table class="min-w-full border-collapse border border-gray-300 agenda-table text-sm">
+                        <thead>
+                            <tr class="bg-gray-100">
+                                <th class="border border-gray-300 w-16 font-semibold">Horário</th>
+                                <th class="border border-gray-300 font-semibold">Dom <span class="block font-normal text-xs">23</span></th>
+                                <th class="border border-gray-300 font-semibold">Seg <span class="block font-normal text-xs">24</span></th>
+                                <th class="border border-gray-300 font-semibold">Ter <span class="block font-normal text-xs">25</span></th>
+                                <th class="border border-gray-300 font-semibold">Qua <span class="block font-normal text-xs">26</span></th>
+                                <th class="border border-gray-300 font-semibold">Qui <span class="block font-normal text-xs">27</span></th>
+                                <th class="border border-gray-300 font-semibold">Sex <span class="block font-normal text-xs">28</span></th>
+                                <th class="border border-gray-300 font-semibold">Sáb <span class="block font-normal text-xs">29</span></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="border border-gray-300 text-center font-semibold bg-gray-50">8</td>
+                                <td class="border border-gray-300"></td>
+                                <td class="border border-gray-300"></td>
+                                <td class="border border-gray-300"></td>
+                                <td class="border border-gray-300"></td>
+                                <td class="border border-gray-300"></td>
+                                <td class="border border-gray-300"></td>
+                                <td class="border border-gray-300"></td>
+                            </tr>
+                            <tr>
+                                <td class="border border-gray-300 text-center font-semibold bg-gray-50">9</td>
+                                <td class="border border-gray-300"></td>
+                                <td class="border border-gray-300"></td>
+                                <td class="border border-gray-300"></td>
+                                <td class="border border-gray-300"></td>
+                                <td class="border border-gray-300"></td>
+                                <td class="border border-gray-300"></td>
+                                <td class="border border-gray-300"></td>
+                            </tr>
+                            <tr>
+                                <td class="border border-gray-300 text-center font-semibold bg-gray-50">10</td>
+                                <td class="border border-gray-300"></td>
+                                <td class="border border-gray-300"></td>
+                                <td class="border border-gray-300"></td>
+                                <td class="border border-gray-300"></td>
+                                <td class="border border-gray-300"></td>
+                                <td class="border border-gray-300"></td>
+                                <td class="border border-gray-300"></td>
+                            </tr>
+                             <tr>
+                                <td class="border border-gray-300 text-center font-semibold bg-gray-50">11</td>
+                                <td class="border border-gray-300"></td>
+                                <td class="border border-gray-300"></td>
+                                <td class="border border-gray-300"></td>
+                                <td class="border border-gray-300"></td>
+                                <td class="border border-gray-300"></td>
+                                <td class="border border-gray-300"></td>
+                                <td class="border border-gray-300"></td>
+                            </tr>
+                             <tr>
+                                <td class="border border-gray-300 text-center font-semibold bg-gray-50">12</td>
+                                <td class="border border-gray-300"></td>
+                                <td class="border border-gray-300"></td>
+                                <td class="border border-gray-300"></td>
+                                <td class="border border-gray-300"></td>
+                                <td class="border border-gray-300"></td>
+                                <td class="border border-gray-300"></td>
+                                <td class="border border-gray-300"></td>
+                            </tr>
+                            <tr>
+                                <td class="border border-gray-300 text-center font-semibold bg-gray-50">13</td>
+                                <td class="border border-gray-300"></td>
+                                <td class="border border-gray-300"></td>
+                                <td class="border border-gray-300"></td>
+                                <td class="border border-gray-300"></td>
+                                <td class="border border-gray-300"></td>
+                                <td class="border border-gray-300"></td>
+                                <td class="border border-gray-300"></td>
+                            </tr>
+                             <tr>
+                                <td class="border border-gray-300 text-center font-semibold bg-gray-50">14</td>
+                                <td class="border border-gray-300"></td>
+                                <td class="border border-gray-300"></td>
+                                <td class="border border-gray-300"></td>
+                                <td class="border border-gray-300"></td>
+                                <td class="border border-gray-300"></td>
+                                <td class="border border-gray-300"></td>
+                                <td class="border border-gray-300"></td>
+                            </tr>
+                             <tr>
+                                <td class="border border-gray-300 text-center font-semibold bg-gray-50">15</td>
+                                <td class="border border-gray-300"></td>
+                                <td class="border border-gray-300"></td>
+                                <td class="border border-gray-300"></td>
+                                <td class="border border-gray-300"></td>
+                                <td class="border border-gray-300"></td>
+                                <td class="border border-gray-300"></td>
+                                <td class="border border-gray-300"></td>
+                            </tr>
+                            <tr>
+                                <td class="border border-gray-300 text-center font-semibold bg-gray-50">16</td>
+                                <td class="border border-gray-300"></td>
+                                <td class="border border-gray-300"></td>
+                                <td class="border border-gray-300"></td>
+                                <td class="border border-gray-300"></td>
+                                <td class="border border-gray-300"></td>
+                                <td class="border border-gray-300"></td>
+                                <td class="border border-gray-300"></td>
+                            </tr>
+                            <tr>
+                                <td class="border border-gray-300 text-center font-semibold bg-gray-50">17</td>
+                                <td class="border border-gray-300"></td>
+                                <td class="border border-gray-300"></td>
+                                <td class="border border-gray-300"></td>
+                                <td class="border border-gray-300"></td>
+                                <td class="border border-gray-300"></td>
+                                <td class="border border-gray-300"></td>
+                                <td class="border border-gray-300"></td>
+                            </tr>
+                            </tbody>
+                    </table>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
